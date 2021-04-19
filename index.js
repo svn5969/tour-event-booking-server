@@ -152,7 +152,7 @@ client.connect((err) => {
  
  
 app.get('/', (req, res) => {
-  res.send('Hello!! Welcome to Bibaho')
+  res.send('Hello!! Welcome SvnTour')
 })
  
  
