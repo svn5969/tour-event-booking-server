@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(fileUpload());
  
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.usuec.mongodb.net/${process.env.DB_USER}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://SvnTour:svntour11@cluster0.usuec.mongodb.net/TourService?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect((err) => {
   console.log(err);
